@@ -7,8 +7,9 @@ bot.on("ready", () => {
 })
 
 bot.on("message", message => {
+  const args = message.content.trim().split(/ +/g);
   if(message.content.startsWith("I'm")) {
-    message.channel.send(`Hi ${message.content.pop("I'm")}, I'm dad.`)
+    message.channel.send(`Hi ${message.content.splice(0)}, I'm dad.`)
   }
 });
 
