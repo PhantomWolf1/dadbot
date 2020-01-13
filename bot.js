@@ -7,7 +7,7 @@ bot.on("ready", () => {
 })
 
 bot.on("message", message => {
-  if(message.startsWith("I'm")) {
+  if(message.content.startsWith("I'm")) {
     message.channel.send(`Hi ${message.content}, I'm dad.`)
   }
 });
