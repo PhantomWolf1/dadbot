@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-cosnt fs = require("fs");
+const fs = require("fs");
 
 bot.on("ready", () => {
   console.log("Reed is a nerd.");
